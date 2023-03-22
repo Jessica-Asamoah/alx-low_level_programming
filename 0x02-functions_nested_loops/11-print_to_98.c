@@ -7,13 +7,27 @@
  * Description: Prints all natural numbers from n to 98
  * Return: void
  */
-
 void print_to_98(int n)
 {
-	int i;
-	for (i = '0'; i <= '98'; i++)
+	if (n <= 98)
 	{
-		_putchar(i)
+		while (n > 98)
+		{
+			_putchar(n + '0');
+			_putchar(',');
+			_putchar(' ');
+		}
+		_putchar('\n');
 	}
-	_putchar('\n');
-}	
+	else
+	{
+		while (n >= 98)
+		{
+			_putchar(n + '0');
+			_putchar(',');
+			_putchar(' ');
+		}
+		_putchar('\n');
+	}
+
+}
