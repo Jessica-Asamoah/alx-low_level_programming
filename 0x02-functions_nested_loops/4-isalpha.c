@@ -3,6 +3,7 @@
 
 /**
  * _isalpha - entry point
+ * @c: an input parameter
  * Description: function checks for alphabetic character
  * Return: if it lowercase or uppercase return 1. Return 0 otherwise
  */
