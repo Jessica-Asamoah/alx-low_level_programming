@@ -13,6 +13,7 @@ void print_to_98(int n)
 	int i;
 	for (i = 0; i <= 98; i++)
 	{
-		printf("%d\n" , i + 1);
+		_putchar(i)
 	}
+	_putchar('\n');
 }	
