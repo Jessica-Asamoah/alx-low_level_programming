@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- * more__numbers - Entry point
+ * more_numbers - Entry point
  * Desription: prints numbers from 0 to 14 ten times
  * Return: void
  */
