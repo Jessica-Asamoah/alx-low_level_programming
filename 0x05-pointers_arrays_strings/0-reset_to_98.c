@@ -2,7 +2,7 @@
 
 /**
  * reset_to_98 - update the value it points to, to 98
- * @n - address
+ * @n: address
  * Return: nothing
  */
 
