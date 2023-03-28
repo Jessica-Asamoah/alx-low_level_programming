@@ -9,7 +9,8 @@
 int _strlen(char *s)
 {
 	int len = 0;
-	printf("%lu\n", sizeof(&s));
+
+	printf("%lu\n", sizeof(s));
 	len = 1;
 
 	return (len);
