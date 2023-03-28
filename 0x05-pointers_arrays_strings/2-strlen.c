@@ -9,8 +9,10 @@
 int _strlen(char *s)
 {
 	int len = 0;
+	int i;
 
-	printf("%lu\n", sizeof(s)/sizeof(s[0]));
+	for (i = 0; i != '\0'; ++1);
+	printf("%d\n", i);
 	len = 1;
 
 	return (len);
