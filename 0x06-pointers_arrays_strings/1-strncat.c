@@ -1,3 +1,4 @@
+#include <string.h>
 #include "main.h"
 
 /**
@@ -11,22 +12,18 @@
 
 char *_strncat(char *dest, char *src, int n)
 {
-	if ((dest == NULL) && (src == NULL))
-		return NULL;
+	if (dest == 0 || src == 0)
+		return 0;
 
-	while (*dest != '\0')
-	{
-		dest++;
-	}
+	int i = strlen(dest);
+	int a = 0;
+	int b = i;
 
-	while (n--)
-	{
-		if (!(*dest++ = *src++))
-		{
-			return dest;
-		}
+	while (a < n && src[a] != '\0')
+	{ 
+		dest[i++] = src[a++];
 	}
-	*dest = '\0';
+	dest[i] = '\0';
 
 	return (dest);
 }
