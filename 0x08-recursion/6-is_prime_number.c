@@ -5,7 +5,7 @@ int divide(int i, int mod);
 /**
  * is_prime_number - Entry point
  * @n: input integer
- * Return returns 1 if prime and 0 otherwise
+ * Return: returns 1 if prime and 0 otherwise
  */
 
 int is_prime_number(int n)
@@ -24,7 +24,7 @@ int is_prime_number(int n)
  * divide - entry point
  * @i: input integer
  * @mod: input integer
- * return: return
+ * Return: returns 0 if number is not divisible otherwise 1
  */
 
 int divide(int i, int mod)
