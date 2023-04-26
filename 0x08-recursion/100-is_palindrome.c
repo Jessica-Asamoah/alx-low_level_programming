@@ -12,7 +12,7 @@ int helper_palindrome(char *s, int len);
 
 int _strlen_recursion(char *s)
 {
-	if(!*s)
+	if (!*s)
 	{
 		return (0);
 	}
