@@ -3,13 +3,12 @@
 #include <ctype.h>
 
 /**
- * main - Entry point
- * @argc: count
- * @argv: string array of arguments
+ * main - add positive numbers.
+ * @argc: count arguments passed in argv
+ * @argv: String that holds the passed Arguments.
  *
- * Return: 0 (success) else 1 (failure)
+ * Return: 0 (Sucess) else 1 (Failure).
  */
-
 int main(int argc, char *argv[])
 {
 	int i, c, sum = 0;
@@ -19,7 +18,8 @@ int main(int argc, char *argv[])
 		printf("0\n");
 		return (0);
 	}
-	for (i = i; i <argc; i++)
+
+	for (i = 1; i < argc; i++)
 	{
 		for (c = 0; argv[i][c] != '\0'; c++)
 		{
@@ -31,6 +31,7 @@ int main(int argc, char *argv[])
 		}
 		sum += atoi(argv[i]);
 	}
+
 	printf("%d\n", sum);
 	return (0);
 }
