@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 /**
  * main - Entry point
@@ -11,16 +12,25 @@
 
 int main(int argc, char *argv[])
 {
-	int i, sum = 1;
+	int i, c, sum = 0;
 
-	/*one for prgram name and two for the in values*/
-	if (argc != 3)
+	if (argc < 2)
 	{
-		printf("Error\n");
-		return (1);
+		printf("0\n");
+		return (0);
 	}
-	for (i = 1; i < argc; i++)
-		sum *= atoi(argv[i]);
+	for (i = i; i <argc; i++)
+	{
+		for (c = 0; argv[i][c] != '\0'; c++)
+		{
+			if (!isdigit(argv[i][c]))
+			{
+				printf("Error\n");
+				return (1);
+			}
+		}
+		sum += atoi(argv[i]);
+	}
 	printf("%d\n", sum);
 	return (0);
 }
