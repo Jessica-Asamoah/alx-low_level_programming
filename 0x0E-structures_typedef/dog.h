@@ -6,7 +6,6 @@
  * @name: Name of dog
  * @age: Dog's age
  * @owner: Owner
- * 
  * Description: data structure for dog
  */
 
