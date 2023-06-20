@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print_dog - Function that print a struc dog
+ * print_dog - Function that print a struct dog
  * @d: Struct to initialize
  *
  * Return: void
