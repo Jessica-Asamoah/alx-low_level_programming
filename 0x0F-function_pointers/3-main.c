@@ -8,7 +8,8 @@
  * @argc: Argument count
  * @argv: Arguments array
  *
- * Return: exits 0 normally, 98 on argc error, 99 on illegal operator
+ * Return: exits 0 normally, 98 on argc error,
+ * 99 on illegal operator
  */
 
 int main(int argc, char *argv[])
