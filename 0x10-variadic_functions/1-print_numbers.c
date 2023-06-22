@@ -5,7 +5,7 @@
 /**
  * print_numbers - Funtion that prints a number followed by
  * a new line
- * @n: Parameters nnumber
+ * @n: Parameters number
  * @...: Other parameters
  *
  * Return: printed number
