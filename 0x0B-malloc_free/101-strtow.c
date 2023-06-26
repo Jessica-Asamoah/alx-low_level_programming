@@ -101,7 +101,7 @@ char **strtow(char *str)
 	while (i != -1)
 	{
 		len = word_len(str, i);
-		arr[k] =malloc(sizeof(char) * (len + 1));
+		arr[k] = malloc(sizeof(char) * (len + 1));
 		if (arr[k] == NULL)
 			return (NULL);
 		for (j = 0; j < len; j++)
