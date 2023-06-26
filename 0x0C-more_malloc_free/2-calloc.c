@@ -11,18 +11,22 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	unsigned int i = 0;
-	char *space;
+	void *res = NULL;
+	unsigned long prod = size * nmemb;
+	unsigned int i;
+	char *p = NULL;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
-
-	space = malloc(nmemb * size);
-	if (space == NULL)
+	if (prod / size != nmemb)
 		return (NULL);
 
-	for (; i < nmemb * size; i++)
-		*(space + 1) = 0;
-
-	return (space);
+	res = malloc(nmemb * size);
+	if (res != NULL)
+	{
+		p = res;
+		for (i = 0; i < prod; i++)
+			p[i] = 0;
+	}
+	return (res);
 }
