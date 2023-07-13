@@ -85,7 +85,7 @@ void _fclose_error(int fd)
 
 int main(int argc, char *argv[])
 {
-	char *buff = malloc(sizeof(char) *1024);
+	char *buff = malloc(sizeof(char) * 1024);
 	int count = 0, len = 0, fr = 0, fw = 0;
 
 	if (argc != 3)
