@@ -3,7 +3,7 @@
 /**
  * sum_dlistint - Function that returns the sum of all the data
  * @head: head of the list
- * 
+ *
  * Return: Sum
  */
 
