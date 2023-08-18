@@ -5,7 +5,7 @@
  * a doubly linked list
  * @head: Head of the list
  * @index: index of the nth node
- * 
+ *
  * Return: nth node
  */
 
